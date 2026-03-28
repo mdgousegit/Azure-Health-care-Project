@@ -251,8 +251,6 @@
 									{
 										"name": "incremental_Load_CP",
 										"type": "Copy",
-										"state": "Inactive",
-										"onInactiveMarkAs": "Succeeded",
 										"dependsOn": [
 											{
 												"activity": "fetch_logs",
