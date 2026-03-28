@@ -30,8 +30,8 @@
 						"referenceName": "ds_adls_generic",
 						"type": "DatasetReference",
 						"parameters": {
-							"container": "configs",
-							"file_path": "emr",
+							"container": "raw",
+							"file_path": "config",
 							"file_name": "load_config.csv"
 						}
 					},
