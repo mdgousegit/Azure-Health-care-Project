@@ -121,14 +121,14 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"schema_name": {
-											"value": "@item().database",
+											"value": "dbo",
 											"type": "Expression"
 										},
 										"table_name": {
 											"value": "@split(item().tablename,'.')[1]",
 											"type": "Expression"
 										},
-										"db_name": "dbo"
+										"db_name": "@item().database"
 									}
 								}
 							]
