@@ -201,8 +201,6 @@
 						{
 							"name": "If Condition2",
 							"type": "IfCondition",
-							"state": "Inactive",
-							"onInactiveMarkAs": "Succeeded",
 							"dependsOn": [
 								{
 									"activity": "If Condition1",
@@ -221,6 +219,8 @@
 									{
 										"name": "fetch_logs",
 										"type": "Lookup",
+										"state": "Inactive",
+										"onInactiveMarkAs": "Succeeded",
 										"dependsOn": [],
 										"policy": {
 											"timeout": "0.12:00:00",
@@ -251,6 +251,8 @@
 									{
 										"name": "incremental_Load_CP",
 										"type": "Copy",
+										"state": "Inactive",
+										"onInactiveMarkAs": "Succeeded",
 										"dependsOn": [
 											{
 												"activity": "fetch_logs",
@@ -337,6 +339,8 @@
 									{
 										"name": "insert_logs_increm",
 										"type": "Lookup",
+										"state": "Inactive",
+										"onInactiveMarkAs": "Succeeded",
 										"dependsOn": [
 											{
 												"activity": "incremental_Load_CP",
@@ -455,6 +459,8 @@
 									{
 										"name": "insert_fullload_logs",
 										"type": "Lookup",
+										"state": "Inactive",
+										"onInactiveMarkAs": "Succeeded",
 										"dependsOn": [
 											{
 												"activity": "full_load",
@@ -495,6 +501,8 @@
 						{
 							"name": "If Condition3",
 							"type": "IfCondition",
+							"state": "Inactive",
+							"onInactiveMarkAs": "Succeeded",
 							"dependsOn": [
 								{
 									"activity": "If Condition2",
